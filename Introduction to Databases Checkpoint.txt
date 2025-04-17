@@ -1,0 +1,64 @@
+Slide 1: Title Slide
+MongoDB vs SQL: A Modern Database Comparison
+Subtitle: Choosing the right database for your project
+
+Slide 2: Overview
+SQL Databases
+
+Relational databases (MySQL, PostgreSQL, SQL Server)
+
+Structured data with predefined schemas
+
+Uses tables, rows, and columns
+
+ACID compliant (Atomicity, Consistency, Isolation, Durability)
+
+MongoDB (NoSQL)
+
+Document-oriented database
+
+Schema-less, flexible JSON-like documents
+
+Collections instead of tables
+
+BASE model (Basically Available, Soft state, Eventually consistent)
+
+Slide 3: Data Structure Comparison
+Feature	SQL	MongoDB
+Data Model	Tables with rows	Collections with JSON documents
+Schema	Fixed schema required	Dynamic schema
+Relationships	Joins with foreign keys	Embedded documents or references
+Example	SELECT * FROM users	db.users.find({})
+Slide 4: Performance & Scalability
+SQL
+✔️ Excellent for complex queries
+✔️ Strong consistency
+❌ Vertical scaling (hardware upgrade)
+❌ Performance drops with large datasets
+
+MongoDB
+✔️ Horizontal scaling (sharding)
+✔️ High performance for large datasets
+✔️ Flexible for unstructured data
+❌ No native joins (requires application logic)
+
+Slide 5: Use Cases
+Choose SQL When:
+
+You need complex transactions (e.g., banking systems)
+
+Data integrity is critical
+
+Your data structure is stable and predictable
+
+Choose MongoDB When:
+
+You need fast prototyping and flexible schemas
+
+Handling large volumes of unstructured data
+
+Scaling horizontally is a priority (e.g., IoT, real-time analytics)
+
+Final Verdict:
+SQL → "Structured and reliable"
+MongoDB → "Flexible and scalable"
